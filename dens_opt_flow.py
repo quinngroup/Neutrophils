@@ -4,7 +4,7 @@ import numpy as np
 cap = cv2.VideoCapture('Phagocytosis_dmso_control 06302016.avi')
 
 ret, frame1 = cap.read()
-prvs = cv2.cvtColor(frame1,cv2.COLOR_BGR2GRAY)
+prvs = frame1#cv2.cvtColor(frame1,cv2.COLOR_BGR2GRAY)
 hsv = np.zeros_like(frame1)
 hsv[...,1] = 255
 

@@ -122,14 +122,14 @@ while vf.isOpened():
     # cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS ensures
     # the size of the circle corresponds to the size of blob
     #print("here")
-    #print(dir(keypoints[0]))
+    print(dir(keypoints[0]))
     #print(keypoints[0].pt)  #point center
     #import sys
     
     im_with_keypoints = cv2.drawKeypoints(frame4, keypoints, np.array([]), (0,0,255), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
     for keypoint in keypoints:
         cur_center = (int(keypoint.pt[0]), int(keypoint.pt[1]))
-        im_with_keypoints= cv2.putText(im_with_keypoints, "here", cur_center, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 0)
+        im_with_keypoints= cv2.putText(im_with_keypoints, "Here", cur_center, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 0)
     #sys.exit(0)
     #BW2 = np.array([32767 if i == 32767 else 0 for i in range(0,256)]).astype(np.int16)
     #frame5 = cv2.LUT(frame5,BW2)   
@@ -191,11 +191,12 @@ while vf.isOpened():
     key = cv2.waitKey(1) & 0xFF
     if key == ord("q"):
         break
-#zip(*blob_numbers)
+'''#zip(*blob_numbers)
 plt.scatter(*zip(*blob_numbers))
 plt.plot(*zip(*blob_numbers))
 plt.show()
 print blob_numbers
+'''
 cv2.destroyAllWindows()
 out.release()
 vf.release()
