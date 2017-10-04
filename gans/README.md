@@ -1,4 +1,4 @@
-# neutrophils-gan
+#### neutrophils-gan
 
 GAN, WGAN, Improved WGANs for Neutrophil gray-scale images.
 
