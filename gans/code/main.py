@@ -223,8 +223,10 @@ if opt.beta2 is None:
     opt.beta2 = gan_choice({ 'gan': 0.999, 'wgan': 0.9, 'wgan-gp': 0.9}, 'beta2')
 
 if optimizer_name == 'adam':
-    optimizerD = optim.Adam(netD.parameters(), lr=opt.lrD, betas=(opt.beta1, opt.beta2),weight_decay=opt.weight_decay)
-    optimizerG = optim.Adam(netG.parameters(), lr=opt.lrG, betas=(opt.beta1, opt.beta2),weight_decay=opt.weight_decay)
+    optimizerD = optim.Adam(netD.parameters(), lr=opt.lrD, betas=(opt.beta1, opt.beta2))
+    #,weight_decay=opt.weight_decay)
+    optimizerG = optim.Adam(netG.parameters(), lr=opt.lrG, betas=(opt.beta1, opt.beta2))
+    #,weight_decay=opt.weight_decay)
 elif optimizer_name == 'rmsprop':
     optimizerD = optim.RMSprop(netD.parameters(), lr=opt.lrD)
     optimizerG = optim.RMSprop(netG.parameters(), lr=opt.lrG)
