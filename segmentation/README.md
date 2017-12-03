@@ -15,3 +15,4 @@ Just follow the steps in [wborder_wholeimg_224x224.ipynb](https://github.com/qui
 ### Acknowledgments
 1. [Fast.ai](https://github.com/fastai/courses/blob/master/deeplearning2/tiramisu-keras.ipynb)
 2. [There's Waldo!](https://github.com/bckenstler/TheresWaldo)
+3. Jégou, S., Drozdzal, M., Vázquez, D., Romero, A., and Bengio, Y. (2016). The one hundred layers tiramisu: Fully convolutional densenets for semantic segmentation. CoRR, abs/1611.09326.
