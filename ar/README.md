@@ -1,11 +1,15 @@
 ### Motion Synthesis
-Motion Synthesis can be defined as generating new versions of a dataset which follow the original distribution. Autoregression (AR)
-processes have been used in tracking and for synthesizing video textures (a temporal texture). It's a parametric modeling technique, which models every point in
-sequence as a linear combination of d previous points.
 
-This folder contains the code to train neutrophil based AR models for synthesizing their trajectories.
+---
+Motion Synthesis can be defined as generating new versions of a dataset which follow the original distribution. Autoregression (AR) processes have been used in tracking and for synthesizing video textures (a temporal texture). It's a parametric modeling technique, which models every point in sequence as a linear combination of d previous points. We used AR for building a motion model based on neutrophil trajectories.
+
+This folder contains the following:
 1. [plots_and_ar.ipynb](https://github.com/quinngroup/Neutrophils/blob/master/ar/plots_and_ar.ipynb): Contains all the code used for creating AR models based on neutrophil trajectories.
 2. [ar.py](https://github.com/quinngroup/Neutrophils/blob/master/ar/ar.py): Contains all the functions to train and testt AR models.
+
+#### Usage
+
+Just follow the [plots_and_ar.ipynb](https://github.com/quinngroup/Neutrophils/blob/master/ar/plots_and_ar.ipynb) notebook. 
 
 ---
 

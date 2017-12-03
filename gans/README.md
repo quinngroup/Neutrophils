@@ -1,4 +1,4 @@
-### GANs for synthesizing neutrophil appearance
+### Appearance Synthesis
 ---
 This folder contains the code for synthesizing the appearance of neutrophils. It contains the following pieces:
 
